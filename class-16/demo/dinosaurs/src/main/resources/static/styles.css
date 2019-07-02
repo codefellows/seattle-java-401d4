@@ -1,0 +1,17 @@
+h1 {
+    font-family: 'Comic Sans MS';
+}
+
+.potato {
+    color: brown;
+}
+
+/*
+    Static things:
+    css files
+    js files
+    image files
+    pdf
+    audio/video
+    all of these happily go in resources/static
+*/

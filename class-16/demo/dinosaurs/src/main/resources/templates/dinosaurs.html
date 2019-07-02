@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rawr</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- executed by the browser -->
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <!--             directory/file   :: fragmentName -->
+    <div th:replace="fragments/header :: potato">...</div>
+    <h3>Welcome, <span th:text="${loggedInUser.username}"></span></h3>
+    <h4>Your dinosaurs</h4>
+    <div th:replace="fragments/dinosaurs :: dinosaursList(dinosaurs=${loggedInUser.dinosaurs})"></div>
+    <div sec:authorize="isAuthenticated()">
+        Text visible only to authenticated users.
+    </div>
+</body>
+</html>

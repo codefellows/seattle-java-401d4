@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Log in to dinos</title>
+    <!-- executed by the browser -->
+    <link href="/styles.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Log in</h1>
+    <div th:if="${shouldShowExtraMessage}">
+        You got the secret message
+    </div>
+    <form action="/login" method="POST">
+        <input name="username" />
+        <input name="password" />
+        <input type="submit" />
+    </form>
+    <div sec:authorize="isAuthenticated()">
+        Text visible only to authenticated users.
+    </div>
+
+</body>
+</html>

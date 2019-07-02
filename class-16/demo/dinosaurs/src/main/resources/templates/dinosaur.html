@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>One Dinosaur</title>
+</head>
+<body>
+    <h1>Your Dinosaur</h1>
+    <h3 th:text="${dino.name}"></h3>
+    <p>
+        [[${article}]] [[${dino.species}]] who is <span th:if="${!dino.isCarnivore}">not</span> a carnivore.
+    </p>
+
+    <h3>Friends</h3>
+    <div th:replace="fragments/dinosaurs :: dinosaursList(dinosaurs=${dino.friends})"></div>
+
+    <h3>Add a friend!</h3>
+    <form method="POST" th:action="'/dinosaurs/' + ${dino.id} + '/friends'">
+        <select name="friend">
+            <option
+                    th:each="friendDino : ${possibleFriendDinos}"
+                    th:value="${friendDino.id}"
+                    th:text="${friendDino.name}">
+            </option>
+        </select>
+        <input type="submit">
+    </form>
+</body>
+</html>

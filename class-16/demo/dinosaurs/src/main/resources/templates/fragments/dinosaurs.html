@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <ul th:fragment="dinosaursList(dinosaurs)">
+        <li th:each="dino : ${dinosaurs}">
+            <a th:href="'/dinosaurs/' + ${dino.id}">
+                <span th:text="${dino.name}"></span>, a <span th:text="${dino.species}"></span>
+            </a>
+        </li>
+    </ul>
+
+</body>
+</html>

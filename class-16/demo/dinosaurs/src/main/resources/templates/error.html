@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Error</title>
+</head>
+<body>
+<h3>you messed up</h3>
+
+<table>
+<tr>
+    <td>Path</td>
+    <td th:text="${path}"/>
+</tr>
+<tr>
+    <td>Error</td>
+    <td th:text="${error}"/>
+</tr>
+<tr>
+    <td>Status</td>
+    <td th:text="${status}"/>
+</tr>
+<tr>
+    <td>Message</td>
+    <td th:text="${message}"/>
+</tr>
+</table>
+</body>
+</html>
