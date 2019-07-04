@@ -1,0 +1,52 @@
+header {
+    background: #444;
+    color: ivory;
+    line-height: 2em;
+    font-size: 1.5em;
+}
+
+main {
+    margin: 1.5em 1em;
+
+    ul {
+        list-style-type: none;
+
+        li {
+            background: #eee;
+            line-height: 1.6em;
+            margin: .5em;
+            padding: .5em;
+
+            &.vip-false {
+                background:pink;
+            }
+
+            details {
+                summary {
+                  display:flex;
+                    flex-direction:row;
+                    justify-content: space-between;
+                 }
+                section {
+                    background: #ccc;
+                    div {
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        padding:.2345em .5em;
+
+                        &:hover {
+                            background: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
+
+footer {
+    background: #ccc;
+    line-height: 5em;
+}
