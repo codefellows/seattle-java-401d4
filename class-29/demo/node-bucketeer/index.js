@@ -1,27 +1,27 @@
 'use strict';
 
+require('dotenv').config();
 const uuid = require('uuid/v4');
 const express = require('express');
-const fs = require('fs-extra');
 const multer = require('multer');
 const AWS = require('aws-sdk');
+const uploader = require('./lib/uploader.js');
 
 const app = express();
-const uploader = multer({dest:`${__dirname}/uploads`});
+const multipart = multer({dest:`${__dirname}/uploads`});
 
 AWS.config.update({
   region: 'us-west-2',
 });
 
 const dynamodb = new AWS.DynamoDB();
-const s3 = new AWS.S3();
 
 app.use(express.urlencoded({extended:true}));
 app.use(express.json());
 
 app.get('/people', getAllRecords);
 
-app.post('/people', uploader.any(), createRecord);
+app.post('/people', multipart.any(), createRecord);
 
 function getAllRecords( req, res, next ) {
 
@@ -48,7 +48,7 @@ function createRecord( req, res, next ) {
   let name = req.body.name;
   let old = !! req.body.old;
 
-  upload(file)
+  uploader(process.env.AWS_BUCKET, file.path, file.mimetype, file.originalname)
     .then(url => {
       let record = {
         TableName: 'people',
@@ -66,29 +66,6 @@ function createRecord( req, res, next ) {
 
     })
     .catch(next);
-}
-
-function upload(file) {
-
-  let config = {
-    Bucket: 'cokos-people',
-    Key: `${file.filename}.${file.originalname}`,
-    ACL: 'public-read',
-    ContentType: file.mimetype,
-    Body: fs.createReadStream(file.path),
-  };
-
-  return s3.upload(config)
-    .promise()
-    .then(res => {
-      return fs.remove(file.path)
-        .then( () => res.Location);
-    })
-    .catch(err => {
-      return fs.remove(file.path)
-        .then( () => Promise.reject(err) );
-    });
-
 }
 
 app.listen(3000, () => console.log('up on 3000'));
