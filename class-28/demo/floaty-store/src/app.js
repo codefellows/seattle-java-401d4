@@ -9,6 +9,7 @@ const API = 'http://172.16.0.219:5000/api/v1/customers'
 function People() {
 
   const [people, setPeople] = useState([]);
+  const [counter, setCount] = useState(0);
 
   const _getPeople = () => {
     // setPeople(mockData)
@@ -70,10 +71,10 @@ function History(props) {
   return (
     <section>
       {history.map( (item,idx) =>
-        <div>
+        <>
           <span>{item.itemName}</span>
           <span>{item.price}</span>
-        </div>
+        </>
       )}
     </section>
   )
