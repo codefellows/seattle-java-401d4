@@ -3,6 +3,8 @@
 ## Agenda
 
 - Announcements
-- Code review
-- Lecture
+- Survey creview
+- Lecture - S3
+- Demo - S3
+- Lecture Hashtables
 - Lab intro
