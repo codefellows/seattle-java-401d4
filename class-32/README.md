@@ -1,11 +1,16 @@
-# Class 32: Lambda
+# Class 32: Lambda with API Gateway
 
 ## Agenda
 
 - Announcements
-    - Michelle is back! Tag teaming lecture with John today, and planning to be mostly Michelle from here on out.
+    - Happy Wednesday!
+    - CCW 3 is next Friday, July 19; that's when lightning talks will happen.
+    - Whiteboard finals will start next week, continuing into the following week! I'll let you all request whether you'd like to go early/late/no preference.
 - Code review
-    - Hashtables
-    - TaskMaster (so far)
+    - finding repeated words
+    - lambdas with S3
 - Lecture
-- Lab intro: S3 and Java
+    - quick IAM discussion
+    - what if lambdas could act like routes
+    - API gateway
+- Lab intro
