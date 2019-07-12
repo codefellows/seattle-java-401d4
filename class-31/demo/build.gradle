@@ -11,6 +11,9 @@ plugins {
     id 'java-library'
 }
 
+targetCompatibility = 1.8
+sourceCompatibility = 1.8
+
 repositories {
     // Use jcenter for resolving your dependencies.
     // You can declare any Maven/Ivy/file repository here.
