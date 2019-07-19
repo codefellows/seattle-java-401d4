@@ -1,0 +1,4 @@
+node_modules/
+
+# added because teaching/running across student machines is complicated, this is not generally good practice
+package-lock.json

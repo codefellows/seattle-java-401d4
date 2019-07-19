@@ -3,7 +3,7 @@
 const { Consumer } = require('sqs-consumer');
 
 const app = Consumer.create({
-  queueUrl: "https://sqs.us-west-2.amazonaws.com/092793752763/MichelleCoolQueue",
+  queueUrl: "https://sqs.us-west-2.amazonaws.com/092793752763/AGoodName",
   handleMessage: handler
 });
 
