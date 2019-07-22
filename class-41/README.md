@@ -2,6 +2,7 @@
 
 ## Agenda
 - Announcements
+    - 2nd round interviews have been scheduled for everyone who interviewed last week and did not pass yet. (If you think you should've been scheduled, but you didn't get a Slack message from me, please let me know!)
     - All resubmits due by Sunday midnight
     - This week's code challenges are all partner interviews
     - Same structure on final project prep assignments: they're due throughout the week but don't lock until Friday night.
