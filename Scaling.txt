@@ -1,0 +1,74 @@
+TaskMaster Features
+
+- Tasks that have title, body, assignee, createdTime, lastUpdatedTime, status (new, assigned, in progress, complete), picture (optional)
+- A user can:
+  - create/update a task
+  - view all tasks "assigned to them", sorted/filtered by status/date created/date updated
+  - Users receive emails when a task is assigned to them
+  - Users also get texts if a high pri task is assigned to them
+  - Users get emails if a task they created/are assigned to is completed
+
+TaskMaster is an application that will be used by:
+- me and the 1000000 people who use this app 
+
+How do you build it? Where do you deploy it?
+- language?
+- tools/services in deployment?
+
+--- Answers ---
+
+Tasks & emails & texts, 1,000,000 users:
+- SNS! Full notification features!
+  - triggered from...
+    - DynamoDB changes!
+
+
+Tasks & emails, 1000000 users:
+- queues!!!
+  - incoming traffic (load balancing)
+  - emails (SES)
+    - batch emails for users getting lots of updates
+Problem: Our S3 costs are MASSIVE.
+  - There are a bunch of images from old tasks that have been closed for a long time.
+    - Archive old stuff to Glacier
+    - Retention policy: after 6 months of inactivity, a task is deleted/its associated images are deleted
+  - We're doing that resize of images, even if the image is already small.
+    - let's only resize images if we need to! Not a lambda that's always triggered, but instead explicitly triggered by our Java upload code.
+
+
+
+Tasks & emails, 1000 users:
+- DynamoDB for data
+  - backups of data
+- deploy with ElasticBeanstalk, EC2
+- split up the FE and the BE (maybe)
+- pay the intern (more legal liability)
+- CI/CD pipeline (totally automated)
+- an actual domain name! HTTPS, encrypting data at rest
+- 2FA
+- password reset, change email
+- groups of users! teams! managers!
+
+Tasks & emails, 10 users:
+- Sendgrid: An API that allows sending email, has a Java SDK
+- SNS: AWS, sends emails (and other things), has a Java SDK
+- unpaid intern to write emails
+- SES: AWS, just sends emails
+- directly send emails from your server
+
+Basic task creation/assignment/filtering, 10 users:
+- deploy somewhere a little nicer? Heroku?
+  - heroku is more free for tiny apps/small amounts of data
+  - heroku for Postgres too!
+- image storage: S3
+- deployment process:
+  - manual deployment: run command on machine
+- auth: user login
+
+Basic task creation/filtering, single user:
+- build/run it on localhost!
+  - could still access it from your phone by IP address!
+- or, run it on that old computer in your closet that is not currently plugged in
+- connect to local PG for data
+- save image files in my /var/images directory on my machine
+
