@@ -1,4 +1,4 @@
-# Class 13: Spring Views & Models
+# Lecture 13: Spring Views & Models
 
 ## Resources
 * [The Spring Initializr \[sic\]](https://start.spring.io/)

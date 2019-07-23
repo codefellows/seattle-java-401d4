@@ -1,4 +1,4 @@
-# Class 15: Trees
+# Lecture 15: Trees
 
 ## Resources
 - [Binary Trees](https://en.wikipedia.org/wiki/Binary_tree)

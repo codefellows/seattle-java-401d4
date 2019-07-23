@@ -1,4 +1,4 @@
-# Class 16: Creating Accounts and Authenticating Users
+# Lecture 16: Creating Accounts and Authenticating Users
 
 ## Agenda
 - Announcements

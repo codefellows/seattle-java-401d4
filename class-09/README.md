@@ -1,4 +1,4 @@
-# Class 9: Stacks and Queues
+# Lecture 9: Stacks and Queues
 
 ## Agenda
 - Announcements

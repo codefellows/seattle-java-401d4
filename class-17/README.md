@@ -1,4 +1,4 @@
-# Class 17: Authorizing Users to View Secured Content
+# Lecture 17: Authorizing Users to View Secured Content
 
 ## Agenda
 - Announcements

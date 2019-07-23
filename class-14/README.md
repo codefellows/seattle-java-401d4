@@ -1,4 +1,4 @@
-# Class 14: Related Resources & Integration Testing
+# Lecture 14: Related Resources & Integration Testing
 
 ## Resources
 * [Spring Guides: Serving Web Content](https://spring.io/guides/gs/serving-web-content/)

@@ -1,4 +1,4 @@
-# Class 8: OO, JSON & External Libraries
+# Lecture 8: OO, JSON & External Libraries
 
 ## Agenda
 - Announcements

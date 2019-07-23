@@ -1,4 +1,4 @@
-# Class 1: Kickoff and Intro to Java
+# Lecture 1: Kickoff and Intro to Java
 
 Welcome to Day 1 of Code 401: Java! We're excited to have you here. Today's focus will be on reviewing the basics from the prework and ensuring you have the basic development tools that you'll need to succeed in this course.
 

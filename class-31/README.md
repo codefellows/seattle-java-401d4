@@ -1,4 +1,4 @@
-# Class 06: Lambda
+# Lecture 06: Lambda
 
 ## Agenda
 

@@ -1,4 +1,4 @@
-# Class 3: Maps, Primitives, and File I/O
+# Lecture 3: Maps, Primitives, and File I/O
 
 ## Agenda
 - Announcements

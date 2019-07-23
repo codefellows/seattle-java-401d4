@@ -1,4 +1,4 @@
-# Class 04: Programmatic S3 Uploads
+# Lecture 04: Programmatic S3 Uploads
 
 ## Agenda
 

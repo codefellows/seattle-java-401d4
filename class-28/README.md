@@ -1,4 +1,4 @@
-# Class 03: S3 for Static Deployments
+# Lecture 03: S3 for Static Deployments
 
 ## Agenda
 

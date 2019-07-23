@@ -1,4 +1,4 @@
-# Class 19: Assorted Adventures
+# Lecture 19: Assorted Adventures
 
 ## Agenda
 

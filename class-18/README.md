@@ -1,4 +1,4 @@
-# Class 18: Following and Sanitizing User Input
+# Lecture 18: Following and Sanitizing User Input
 
 ## Agenda
 - Announcements

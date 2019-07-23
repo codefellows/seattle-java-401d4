@@ -1,4 +1,4 @@
-# Class 32: Lambda with API Gateway
+# Lecture 32: Lambda with API Gateway
 
 ## Agenda
 

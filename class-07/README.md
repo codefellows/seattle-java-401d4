@@ -1,4 +1,4 @@
-# Class 7: Interfaces and Variables (and other relationships between classes)
+# Lecture 7: Interfaces and Variables (and other relationships between classes)
 
 ## Agenda
 - Announcements

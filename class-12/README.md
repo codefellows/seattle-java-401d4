@@ -1,4 +1,4 @@
-# Class 12: Intro to Spring MVC
+# Lecture 12: Intro to Spring MVC
 
 ## Resources
 * [The Spring Initializr \[sic\]](https://start.spring.io/)

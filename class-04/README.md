@@ -1,4 +1,4 @@
-# Class 4: Object Oriented Programming
+# Lecture 4: Object Oriented Programming
 
 ## Agenda
 - Announcements

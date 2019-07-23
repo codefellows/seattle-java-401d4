@@ -1,4 +1,4 @@
-# Class 41: Deployment Adventure!
+# Lecture 41: Deployment Adventure!
 
 ## Agenda
 - Announcements

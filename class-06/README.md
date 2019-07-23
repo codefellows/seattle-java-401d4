@@ -1,4 +1,4 @@
-# Class 6: Inheritance
+# Lecture 6: Inheritance
 
 ## Agenda
 - Announcements

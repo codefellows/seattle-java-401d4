@@ -1,4 +1,4 @@
-# Class 11: Java and the Web Request-Response Cycle
+# Lecture 11: Java and the Web Request-Response Cycle
 
 ## Agenda
 - Announcements

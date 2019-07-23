@@ -1,4 +1,4 @@
-# Class 5: Binary Data Review & LinkedLists
+# Lecture 5: Binary Data Review & LinkedLists
 
 ## Agenda
 - Announcements
